@@ -28,7 +28,7 @@ function getPassword() {
 
 function savePassword() {
      let title = password.value
-     saveButton.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(`Password saya:  + ${title}`))
+     saveButton.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(`Password saya:${title}`))
      saveButton.setAttribute('download', 'MyPasswordGenerator.txt')
      setTimeout(()=>{
           alert("Password berhasil disimpan!")
